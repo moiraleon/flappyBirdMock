@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* overflow hidden means that when these elements go out of the box we can't see them anymore */
+#game{
+    width: 400px;
+    height: 500px;
+    border: 1px solid black;
+    margin: auto;
+    overflow: hidden;
+}
+/* left property only works if the div has a relative position */
+#block{
+    width: 50px;
+    height: 500px;
+    background-color: black;
+    position: relative;
+    left: 400px;
+    animation: block 2s infinite linear;
+}
+/* left negative 50 pixels means the animation stops when it has gone to the -50px position meaning it has gone accross the screen and the entire width of the block (50px) has also */
+@keyframes block {
+    0%{left: 400px;}
+    100%{left: -50px;}
+}
+/* the hole is going to get positioned on top of the block */
+#hole{
+    width: 50px;
+    height: 150px;
+    background-color: #ffffff;
+    position: relative;
+    left: 400px;
+    top: -500px;
+    animation: block 2s infinite linear;
+}

@@ -4,11 +4,12 @@
 }
 /* overflow hidden means that when these elements go out of the box we can't see them anymore */
 #game{
-    width: 400px;
+    width: 774px;
     height: 500px;
     border: 1px solid black;
     margin: auto;
     overflow: hidden;
+    background-image: url("https://i.pinimg.com/originals/c1/1b/d2/c11bd238fcd2098bfc24d3722352ec45.jpg")
 }
 /* left property only works if the div has a relative position */
 #block{

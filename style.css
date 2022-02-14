@@ -21,24 +21,12 @@
     animation: block 2s infinite linear;
 }
 
-#blocky{
-    width: 50px;
-    height: 500px;
-    background-color: black;
-    position: relative;
-    left: 774px;
-    animation: block 2s infinite linear;
-}
 /* left negative 50 pixels means the animation stops when it has gone to the -50px position meaning it has gone accross the screen and the entire width of the block (50px) has also */
 @keyframes block {
     0%{left: 774px;}
     100%{left: -50px;}
 }
 
-@keyframes blocky {
-    0%{left: 774px;}
-    100%{left: -50px;}
-}
 /* the hole is going to get positioned on top of the block */
 #hole{
     width: 50px;
@@ -48,16 +36,6 @@
     left: 400px;
     top: -500px;
     animation: block 2s infinite linear;
-}
-
-#hole{
-    width: 50px;
-    height: 150px;
-    background-color: #ffffff;
-    position: relative;
-    left: 400px;
-    top: -500px;
-    animation: blocky 2.2s infinite linear;
 }
 
 #character{
